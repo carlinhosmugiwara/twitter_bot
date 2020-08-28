@@ -18,7 +18,7 @@ autenticacao.set_access_token(token_acesso, secret_acesso)
 api = tp.API(autenticacao)
 
 #iterar imagens da pasta criada no scraping.py
-os.chdir('nome_pasta')
+os.chdir('nome_dir')
 for imagem in os.listdir('.'):
   api.update_with_media(imagem)
   time.sleep(100)
